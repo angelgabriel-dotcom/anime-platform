@@ -1,0 +1,21 @@
+.platform-header { min-height: 88px; padding: 0 max(28px, calc((100vw - 1440px) / 2)); display: flex; align-items: center; gap: 42px; border-bottom: 1px solid #23222d; background: #0b0b11; color: #f3f0fb; position: relative; z-index: 10; font-family: "Inter", sans-serif; }
+.platform-brand { display: flex; align-items: center; gap: 11px; color: #f3f0fb; flex-shrink: 0; }
+.platform-brand:hover { text-decoration: none; }
+.platform-brand > span { display: flex; align-items: center; font-family: "Barlow Condensed", sans-serif; font-size: 27px; font-weight: 700; letter-spacing: 1px; }
+.platform-brand > span > span { color: #b69bf9; }
+.platform-brand i { width: 4px; height: 4px; background: #b69bf9; margin: 14px 0 0 3px; }
+.platform-header nav { display: flex; align-self: stretch; gap: 32px; align-items: center; }
+.platform-header nav a { height: 100%; display: flex; align-items: center; position: relative; color: #9c99aa; font-size: 12px; font-weight: 500; white-space: nowrap; }
+.platform-header nav a:hover { color: #fff; text-decoration: none; }
+.platform-header nav a[aria-current="page"] { color: #eee5ff; }
+.platform-header nav a[aria-current="page"]::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: #ab87ff; box-shadow: 0 -4px 14px #8c5eed66; }
+.platform-header-actions { display: flex; align-items: center; gap: 24px; margin-left: auto; }
+.platform-access { color: #8b849c; font-size: 8px; font-weight: 600; letter-spacing: 1.5px; white-space: nowrap; }
+.platform-arena-link { display: flex; align-items: center; gap: 9px; padding: 11px 15px; border: 1px solid #464053; color: #ded4ef; font-size: 11px; font-weight: 600; white-space: nowrap; }
+.platform-arena-link:hover { background: #20192d; border-color: #a58bd2; text-decoration: none; }
+.arena-mode-tabs { display: flex; justify-content: center; gap: 10px; padding: 15px 20px; border-bottom: 1px solid #24202f; }
+.arena-mode-tabs button { padding: 8px 18px; background: transparent; color: #aaa1b6; font-size: 10px; letter-spacing: 1.5px; border: 1px solid transparent; }
+.arena-mode-tabs button[aria-pressed="true"] { color: #d4bbff; background: #a57cf019; border-color: #a57cf055; }
+@media (max-width: 1100px) { .platform-header { gap: 28px; } .platform-header nav { gap: 22px; } .platform-access { display: none; } }
+@media (max-width: 800px) { .platform-header { padding: 20px 22px 0; flex-wrap: wrap; gap: 19px; } .platform-header nav { order: 3; width: 100%; height: 46px; justify-content: space-between; gap: 12px; } .platform-header nav a { font-size: 11px; } .platform-brand > span { font-size: 25px; } }
+@media (max-width: 390px) { .platform-header { padding-inline: 16px; } .platform-arena-link { padding: 9px; } .platform-arena-link span { display: none; } .platform-header nav a { font-size: 10px; } }

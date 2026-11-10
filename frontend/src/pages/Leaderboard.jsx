@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import PlatformHeader from "../components/PlatformHeader";
 
-const API = "http://localhost:8080/api/v1";
+const API = "/api/v1";
 
 const CHARACTERS = [
   { id:"sung-jinwoo", name:"Sung Jin-Woo", series:"Solo Leveling",   tier:"GOD", accent:"#7c3aed", sprite:"/characters/sung-jinwoo.png", image:"SJW",
@@ -107,31 +108,7 @@ export default function Leaderboard() {
       {/* Scanline */}
       <div style={{ position:"fixed", inset:0, pointerEvents:"none", zIndex:9999, backgroundImage:"repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.04) 2px,rgba(0,0,0,0.04) 4px)" }}/>
 
-      {/* Nav */}
-      <nav style={{
-        position:"sticky", top:0, zIndex:100,
-        display:"flex", alignItems:"center", justifyContent:"space-between",
-        padding:"14px 32px",
-        background:"rgba(5,5,8,0.9)", backdropFilter:"blur(12px)",
-        borderBottom:"1px solid rgba(255,255,255,0.04)",
-      }}>
-        <div style={{ display:"flex", alignItems:"center", gap:10, cursor:"pointer" }} onClick={() => navigate("/")}>
-          <div style={{ width:7, height:7, borderRadius:"50%", background:"#7c3aed", boxShadow:"0 0 10px #7c3aed", animation:"pulseGlow 2s infinite" }}/>
-          <span style={{ fontFamily:"'Orbitron',monospace", fontSize:12, fontWeight:900, letterSpacing:3, color:"#e2e8f0" }}>
-            SHADOW<span style={{ color:"#7c3aed" }}>ARENA</span>
-          </span>
-        </div>
-        <div style={{ display:"flex", gap:24 }}>
-          <span style={{ fontFamily:"'Orbitron',monospace", fontSize:9, letterSpacing:2, color:"#334155", cursor:"pointer" }} onClick={() => navigate("/")}>HOME</span>
-          <span style={{ fontFamily:"'Orbitron',monospace", fontSize:9, letterSpacing:2, color:"#334155", cursor:"pointer" }} onClick={() => navigate("/battle")}>BATTLE</span>
-          <span style={{ fontFamily:"'Orbitron',monospace", fontSize:9, letterSpacing:2, color:"#7c3aed" }}>RANKINGS</span>
-        </div>
-        <button onClick={() => navigate("/battle")} style={{
-          fontFamily:"'Orbitron',monospace", fontSize:9, fontWeight:700, letterSpacing:2,
-          padding:"8px 16px", background:"linear-gradient(135deg,#7c3aed,#4f46e5)",
-          color:"#fff", border:"none", borderRadius:4, cursor:"pointer",
-        }}>⚔ BATTLE</button>
-      </nav>
+      <PlatformHeader />
 
       <div style={{ maxWidth:1300, margin:"0 auto", padding:"32px 20px" }}>
 

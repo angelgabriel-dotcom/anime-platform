@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
+import PlatformHeader from "../components/PlatformHeader";
 
-const API = "http://localhost:8080/api/v1";
+const API = "/api/v1";
 
 // ─────────────────────────────────────────────
 // CHARACTER ROSTER (mirrors Go stubs)
@@ -325,8 +326,8 @@ function LogEntry({ entry, charA, charB }) {
 // MAIN PAGE
 // ─────────────────────────────────────────────
 export default function Battle() {
-  const navigate = useNavigate();
-  const [selectedA, setSelectedA] = useState(null);
+  const [searchParams] = useSearchParams();
+  const [selectedA, setSelectedA] = useState(() => CHARACTERS.find(character => character.id === searchParams.get("fighter")) || null);
   const [selectedB, setSelectedB] = useState(null);
   const [battleResult, setBattleResult]   = useState(null);
   const [visibleLogs, setVisibleLogs]     = useState([]);
@@ -447,36 +448,12 @@ export default function Battle() {
       {/* Scanline overlay */}
       <div style={{ position:"fixed", inset:0, pointerEvents:"none", zIndex:9999, backgroundImage:"repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.04) 2px,rgba(0,0,0,0.04) 4px)" }}/>
 
-      {/* Nav */}
-      <nav style={{
-        position:"sticky", top:0, zIndex:100,
-        display:"flex", alignItems:"center", justifyContent:"space-between",
-        padding:"14px 32px",
-        background:"rgba(5,5,8,0.9)", backdropFilter:"blur(12px)",
-        borderBottom:"1px solid rgba(255,255,255,0.04)",
-      }}>
-        <div style={{ display:"flex", alignItems:"center", gap:10, cursor:"pointer" }} onClick={() => navigate("/")}>
-          <div style={{ width:7, height:7, borderRadius:"50%", background:"#7c3aed", boxShadow:"0 0 10px #7c3aed", animation:"pulseGlow 2s infinite" }}/>
-          <span style={{ fontFamily:"'Orbitron',monospace", fontSize:12, fontWeight:900, letterSpacing:3, color:"#e2e8f0" }}>
-            SHADOW<span style={{ color:"#7c3aed" }}>ARENA</span>
-          </span>
-        </div>
-        <div style={{ display:"flex", gap:24 }}>
-          {["quick","ranked","story"].map(m => (
-            <button key={m} onClick={() => setMode(m)} style={{
-              fontFamily:"'Orbitron',monospace", fontSize:9, letterSpacing:2,
-              padding:"6px 14px", borderRadius:4, border:"none", cursor:"pointer",
-              background: mode === m ? "rgba(124,58,237,0.2)" : "transparent",
-              color: mode === m ? "#a855f7" : "#334155",
-              borderBottom: mode === m ? "1px solid #7c3aed" : "1px solid transparent",
-              transition:"all 0.2s",
-            }}>{m.toUpperCase()}</button>
-          ))}
-        </div>
-        <span style={{ fontFamily:"'Orbitron',monospace", fontSize:9, letterSpacing:2, color:"#334155", cursor:"pointer" }} onClick={() => navigate("/leaderboard")}>
-          RANKINGS →
-        </span>
-      </nav>
+      <PlatformHeader />
+      <div className="arena-mode-tabs" aria-label="Battle mode">
+        {["quick", "ranked", "story"].map(value => (
+          <button key={value} type="button" aria-pressed={mode === value} onClick={() => setMode(value)}>{value.toUpperCase()}</button>
+        ))}
+      </div>
 
       <div style={{ maxWidth:1400, margin:"0 auto", padding:"24px 20px" }}>
 

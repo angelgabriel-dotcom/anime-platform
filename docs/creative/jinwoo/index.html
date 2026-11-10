@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b10">
+  <meta name="description" content="Animverse's first character entrance: a production storyboard and 3D asset brief for Sung Jin-Woo.">
+  <title>Arise — Jin-Woo / Animverse</title>
+  <link rel="stylesheet" href="review.css">
+  <script src="brief.js" defer></script>
+  <script src="candidates.js" defer></script>
+  <script src="review.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#sequence">Skip to storyboard</a>
+  <header class="masthead wrap">
+    <a href="#top" class="wordmark" aria-label="Animverse, back to top"><span class="brand-mark" aria-hidden="true">A</span>ANIMVERSE<span class="brand-dot">/</span></a>
+    <nav aria-label="Review sections"><a href="#sequence">Sequence</a><a href="#assets">Assets</a><a href="models.html">3D models</a><a href="#next">Next step</a></nav>
+    <span class="edition">DIRECTOR'S NOTEBOOK <b>001</b></span>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span>CHARACTER ENTRANCE / PILOT 01</p>
+        <h1 id="title">ARISE<span>.</span></h1>
+        <div class="hero-byline"><span>SUNG JIN-WOO</span><span class="hairline"></span><span>THE SHADOW MONARCH</span></div>
+        <p class="premise">He gives the order.<br>The battlefield becomes his army.</p>
+      </div>
+      <aside class="hero-note" aria-label="Creative direction">
+        <span class="note-number">01 / SOLO LEVELING</span>
+        <p>His stillness is the center.<br>Everything else answers him.</p>
+        <div class="hero-facts"><span><b>06</b> shots</span><span><b>15s</b> sequence</span><span><b>V0.1</b> brief</span></div>
+        <span class="draft-label">PREPRODUCTION · CAMERA BLOCKING</span>
+      </aside>
+    </section>
+
+    <section class="sequence-section wrap" id="sequence" aria-labelledby="sequence-title">
+      <div class="section-heading"><div><p class="eyebrow">THE ENTRANCE</p><h2 id="sequence-title">Six beats. One command.</h2></div><p>Explore each shot or play the timing.<br>The diagram shows staging and camera positions.</p></div>
+      <div class="storyboard-layout">
+        <div class="sequence-player">
+          <div class="stage" id="stage" data-shot="arrival">
+            <div class="stage-top"><span id="stage-shot">01 / ARRIVAL</span><span>OVERHEAD BLOCKING</span></div>
+            <svg class="blocking" viewBox="0 0 1000 570" role="img" aria-labelledby="map-title map-description">
+              <title id="map-title">Arrival: overhead camera blocking</title>
+              <desc id="map-description">Jin-Woo stands in the central aisle. Camera markers indicate each shot's viewing direction. Soldiers become visible in later shots.</desc>
+              <defs>
+                <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="#303743" stroke-width="0.6"/></pattern>
+                <radialGradient id="shadow-glow"><stop offset="0" stop-color="#8c6eca" stop-opacity="0.30"/><stop offset="1" stop-color="#8c6eca" stop-opacity="0"/></radialGradient>
+                <linearGradient id="cone-fill" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#7aabc2" stop-opacity="0.14"/><stop offset="1" stop-color="#7aabc2" stop-opacity="0.015"/></linearGradient>
+                <marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M 0 0 L 6 3.5 L 0 7" fill="none" stroke="#89b3c8"/></marker>
+              </defs>
+              <rect x="125" y="55" width="750" height="450" fill="url(#grid)" opacity="0.45"/>
+              <path d="M 185 480 V 80 H 815 V 480 M 245 480 V 140 H 755 V 480" fill="none" stroke="#41444e" stroke-width="1"/>
+              <g class="columns" fill="#171c25" stroke="#444956"><rect x="174" y="150" width="23" height="35"/><rect x="174" y="260" width="23" height="35"/><rect x="174" y="370" width="23" height="35"/><rect x="803" y="150" width="23" height="35"/><rect x="803" y="260" width="23" height="35"/><rect x="803" y="370" width="23" height="35"/></g>
+              <text x="500" y="112" text-anchor="middle" class="map-label muted">RUINED HALL / CENTRAL AISLE</text>
+              <ellipse class="shadow-field" cx="500" cy="270" rx="265" ry="175" fill="url(#shadow-glow)"/>
+              <g class="shadow-rings" fill="none" stroke="#8d6bc2"><ellipse cx="500" cy="295" rx="75" ry="43"/><ellipse cx="500" cy="275" rx="166" ry="102" opacity="0.45"/><ellipse cx="500" cy="260" rx="247" ry="150" opacity="0.18"/></g>
+              <g id="soldiers" class="soldiers"></g>
+              <g class="army-label"><path d="M 315 160 H 300 V 330 H 315" fill="none" stroke="#7c699f"/><text x="287" y="240" transform="rotate(-90 287 240)" text-anchor="middle" class="map-label violet">SHADOW RANKS</text></g>
+              <g class="igris"><circle cx="605" cy="270" r="16" fill="#20172e" stroke="#b4a2d2"/><path d="M 605 247 V 254 M 605 286 V 297" stroke="#b4a2d2"/><text x="638" y="275" class="map-label">IGRIS</text></g>
+              <path id="camera-cone" d="M 500 480 L 458 295 L 542 295 Z" fill="url(#cone-fill)" stroke="#719aaf" stroke-width="0.8" stroke-dasharray="5 5"/>
+              <path id="camera-path" d="M 500 440 L 500 480" fill="none" stroke="#89b3c8" stroke-width="1.3" marker-end="url(#arrow)"/>
+              <g class="jinwoo-marker"><circle cx="500" cy="295" r="32" fill="#10121b" stroke="#6b6080"/><path d="M 500 280 L 511 302 L 500 298 L 489 302 Z" fill="#e5deef"/><text x="500" y="350" text-anchor="middle" class="map-label hero-label">JIN-WOO</text></g>
+              <g id="camera-marker" transform="translate(500 480)"><rect x="-12" y="-8" width="24" height="16" rx="2" fill="#14212b" stroke="#8fb4c7"/><path d="M 12 -4 L 19 -9 V 9 L 12 4" fill="#14212b" stroke="#8fb4c7"/><text x="0" y="30" text-anchor="middle" class="map-label camera-label">CAMERA 01</text></g>
+              <g class="safe-frame" fill="none" stroke="#768396" stroke-width="0.8"><path d="M 75 105 V 75 H 105 M 895 75 H 925 V 105 M 75 465 V 495 H 105 M 895 495 H 925 V 465"/></g>
+            </svg>
+            <div class="stage-caption"><span id="stage-line">A footstep. The shadows move first.</span><span id="stage-lens">28 MM</span></div>
+          </div>
+          <div class="transport">
+            <button class="play-button" id="play" type="button" aria-label="Play storyboard timing"><span id="play-icon" aria-hidden="true">▶</span><span id="play-label">Play timing</span></button>
+            <span class="timecode"><output id="current-time" aria-label="Current time">00:00.0</output><span>/ 00:15.0</span></span>
+            <div class="transport-right"><button class="text-button" id="restart" type="button">Restart</button><label class="speed-label">Speed <select id="speed" aria-label="Playback speed"><option value="1">1×</option><option value="0.5">0.5×</option></select></label></div>
+          </div>
+          <label class="sr-only" for="scrubber">Storyboard playhead in seconds</label>
+          <input id="scrubber" type="range" min="0" max="15" step="0.01" value="0" aria-valuetext="0 seconds, Arrival">
+          <div class="shot-strip" id="shot-strip" aria-label="Choose a storyboard shot"></div>
+          <p class="player-note">Timing and camera blocking · Visual effects, character animation, and audio are production tasks.</p>
+        </div>
+
+        <aside class="shot-detail" aria-labelledby="shot-title">
+          <div class="shot-detail-top"><span class="eyebrow" id="shot-range">00:00 — 00:02</span><span id="shot-count">01 / 06</span></div>
+          <h3 id="shot-title">Arrival</h3>
+          <p class="shot-action" id="shot-action"></p>
+          <dl class="shot-notes"><dt>FRAMING & CAMERA</dt><dd id="shot-camera"></dd><dd id="shot-composition"></dd><dt>LIGHT & SHADOW</dt><dd id="shot-light"></dd><dt>SOUND DIRECTION</dt><dd id="shot-sound"></dd></dl>
+          <div class="intent"><span class="eyebrow">WHY THIS SHOT EXISTS</span><p id="shot-purpose"></p></div>
+          <div id="shot-assets" class="asset-tags" aria-label="Assets used in this shot"></div>
+          <div class="shot-navigation"><button id="previous" class="text-button" type="button">← Previous shot</button><button id="next-shot" class="text-button" type="button">Next shot →</button></div>
+        </aside>
+      </div>
+      <p class="sr-only" aria-live="polite" id="shot-announcement"></p>
+    </section>
+
+    <section class="principles wrap" aria-label="Character direction">
+      <article><span>01 / IDENTITY</span><h3>Recognizable first.</h3><p>His face, coat, command, and relationship to his soldiers carry the sequence.</p></article>
+      <article><span>02 / POWER</span><h3>The army is the reveal.</h3><p>“Arise” changes the scene. Every shadow responds to a deliberate act by Jin-Woo.</p></article>
+      <article><span>03 / RESTRAINT</span><h3>Let the moment land.</h3><p>Build toward the summons, then give the formation and final pose room to breathe.</p></article>
+    </section>
+
+    <section class="wrap asset-section" id="assets" aria-labelledby="assets-title">
+      <div class="section-heading"><div><p class="eyebrow">THE PRODUCTION KIT</p><h2 id="assets-title">What brings him to life.</h2></div><p>Required assets and researched candidates.<br>Catalog details are not package validation.</p></div>
+      <div class="candidate-grid" id="candidates"></div>
+      <div class="checklist-top"><h3>Asset & animation checklist</h3><button id="export" class="outline-button" type="button">Download brief ↓</button></div>
+      <div class="asset-filters" id="asset-filters" aria-label="Filter the asset checklist"></div>
+      <div class="asset-list" id="asset-list"></div>
+      <p class="research-note">Free assets only. Jin-Woo and Igris are selected for package inspection; Shadow Knight is a reserve. Researched 9 November 2026. Model packages have not been acquired or validated. Source links retain the creators' catalog attribution and license labels.</p>
+    </section>
+
+    <section class="wrap decisions-section" aria-labelledby="decisions-title"><div class="section-heading"><div><p class="eyebrow">WORKING DECISIONS</p><h2 id="decisions-title">A clear starting point.</h2></div></div><div class="decision-grid" id="decisions"></div></section>
+
+    <section class="next-section wrap" id="next" aria-labelledby="next-title"><div><p class="eyebrow">NEXT / THE FIRST MOTION PROOF</p><h2 id="next-title">One command.<br>One soldier answers.</h2><p>Test the character rig and the summoning beat in a simple hall. That small scene will tell us how to build the full entrance.</p></div><ol id="next-proof"></ol></section>
+    <section class="wrap references" aria-label="Reference material"><span class="eyebrow">REFERENCE NOTES</span><div id="references"></div><p>The Pinterest clip informs the buildup and concentrated reveal. Jin-Woo's own lore determines the performance, army, and effects.</p></section>
+  </main>
+  <footer class="wrap footer"><span>ANIMVERSE / CREATIVE DEVELOPMENT</span><span>JIN-WOO · BRIEF 0.1 · NOV 2026</span><button id="print" class="text-button" type="button">Print brief ↗</button></footer>
+  <noscript><p class="no-script">Enable JavaScript to explore the storyboard, or read the accompanying <a href="README.md">written brief</a>.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b10">
+  <title>The 3D cast — Animverse</title>
+  <meta name="description" content="Explore the shared Jin-Woo Sketchfab collection and the free model selections for Animverse's character entrance prototype.">
+  <link rel="stylesheet" href="review.css">
+  <link rel="stylesheet" href="models.css">
+  <script src="brief.js" defer></script>
+  <script src="candidates.js" defer></script>
+  <script src="models.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#model-review">Skip to model review</a>
+  <header class="masthead wrap">
+    <a href="index.html" class="wordmark" aria-label="Animverse storyboard"><span class="brand-mark" aria-hidden="true">A</span>ANIMVERSE<span class="brand-dot">/</span></a>
+    <nav aria-label="Review sections"><a href="index.html">Storyboard</a><a href="#model-review" aria-current="page">3D models</a><a href="#files">Model files</a></nav>
+    <span class="edition">MODEL INSPECTION <b>002</b></span>
+  </header>
+  <main class="wrap">
+    <section class="model-intro" aria-labelledby="models-title">
+      <p class="eyebrow"><span class="status-dot"></span>CHARACTER MODELS / 3D PREVIEW</p>
+      <h1 id="models-title">The first <em>cast.</em></h1>
+      <p>Jin-Woo gives the order. Igris answers.<br>Explore your shared collection and the free models selected for our first performance.</p>
+      <span class="free-tag">MODEL BUDGET: FREE ONLY</span>
+    </section>
+
+    <section id="model-review" aria-labelledby="selected-name">
+      <div class="model-picker" id="model-picker" aria-label="Choose a 3D preview"></div>
+      <div class="model-layout">
+        <div class="model-view">
+          <div class="model-toolbar"><span>INTERACTIVE 3D VIEWER</span><span>DRAG TO ORBIT · SCROLL TO ZOOM</span></div>
+          <iframe id="model-frame" title="Interactive 3D preview" allow="autoplay; fullscreen; xr-spatial-tracking; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <div class="model-credit"><span id="model-attribution"></span><a id="model-license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" hidden>CC BY 4.0 ↗</a></div>
+          <p class="model-footnote">The official Sketchfab viewer displays the model in 3D. Its controls let you inspect geometry and any published animations. If it cannot load, use the source link to open Sketchfab directly. The Animverse performance will be authored from the downloaded files.</p>
+        </div>
+        <aside class="model-notes">
+          <p class="eyebrow" id="model-role"></p>
+          <h2 id="selected-name"></h2>
+          <p id="selection-reason" class="selection-reason"></p>
+          <dl class="model-facts" id="model-facts" hidden><dt>MODEL COST</dt><dd>Free listing</dd><dt>CATALOG GEOMETRY</dt><dd id="model-faces"></dd><dt>PUBLISHED ANIMATIONS</dt><dd id="model-animations"></dd><dt>MODEL PACKAGE</dt><dd>Awaiting signed-in download</dd></dl>
+          <div class="model-check"><p class="eyebrow" id="model-check-label">ABOUT THIS PREVIEW</p><p id="model-limit"></p></div>
+          <a id="model-source" class="model-source" target="_blank" rel="noopener noreferrer">Open on Sketchfab ↗</a>
+          <p class="download-note" id="download-note"></p>
+        </aside>
+      </div>
+      <p class="sr-only" id="model-announcement" aria-live="polite"></p>
+    </section>
+
+    <section class="model-files" id="files" aria-labelledby="files-title">
+      <div class="section-heading"><div><p class="eyebrow">THE NEXT HANDOFF</p><h2 id="files-title">Bring the models into the project.</h2></div><p>The files let us inspect the skeletons, adjust the materials, and author the command and kneeling animations.</p></div>
+      <ol class="file-steps">
+        <li><span>01</span><div><h3>Download the free package</h3><p>Open the selected model's source page and sign in to Sketchfab. Choose GLB or glTF if offered, or the original FBX archive. Keep textures with the model.</p></div></li>
+        <li><span>02</span><div><h3>Keep each package together</h3><p>Place the Jin-Woo download in <code>assets/incoming/jinwoo/</code> and Igris in <code>assets/incoming/igris/</code>. ZIP archives can remain intact for the first inspection.</p></div></li>
+        <li><span>03</span><div><h3>Inspect, then animate</h3><p>After download, we will inspect the skeletons, textures, and available clips, then test shoulder, finger, coat, and knee deformation. We can author the command and response once the rigs are usable.</p></div></li>
+      </ol>
+      <div class="scope-note"><b>The first motion proof</b><p>One real Jin-Woo rig, one soldier, and the “Arise” response in a simple 3D hall. Sprite sheets and animated character cutouts are excluded.</p></div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>ANIMVERSE / 3D MODEL PREVIEW</span><a href="index.html">← Back to the storyboard</a><span>CATALOG REVIEW · NOV 2026</span></footer>
+  <noscript><p class="no-script">Enable JavaScript to switch between the 3D viewers, or <a href="https://sketchfab.com/fernanflowvera/collections/gffgfg-8def5dabb51a4804ada3a2ead74e2489" target="_blank" rel="noopener noreferrer">open the shared collection on Sketchfab</a>. Model source links and inspection notes are also in <a href="asset-research.md">the asset research</a>.</p></noscript>
+</body>
+</html>
