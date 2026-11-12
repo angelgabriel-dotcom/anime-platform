@@ -1,0 +1,42 @@
+{
+  "tool": "Headless Chrome / Three.js r170",
+  "checks": [
+    {
+      "case": "source-face",
+      "ready": true,
+      "errors": [],
+      "file": "jinwoo-model-v1.glb",
+      "triangles": 29691,
+      "joints": 0,
+      "clipDuration": 0,
+      "skinnedMeshes": 0,
+      "textureLoaded": true,
+      "screenshot": "jinwoo-source-face-v1.png"
+    },
+    {
+      "case": "source-plain",
+      "ready": true,
+      "errors": [],
+      "file": "jinwoo-model-v1.glb",
+      "triangles": 29691,
+      "joints": 0,
+      "clipDuration": 0,
+      "skinnedMeshes": 0,
+      "textureLoaded": true,
+      "screenshot": "jinwoo-source-plain-v1.png"
+    },
+    {
+      "case": "rigged-plain",
+      "ready": true,
+      "errors": [],
+      "file": "jinwoo-rigged-v1.glb",
+      "triangles": 29691,
+      "joints": 24,
+      "clipDuration": 0.03333333507180214,
+      "skinnedMeshes": 1,
+      "textureLoaded": true,
+      "screenshot": "jinwoo-rigged-plain-v1.png"
+    }
+  ],
+  "runtime_exceptions": []
+}

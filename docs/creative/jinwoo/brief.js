@@ -7,7 +7,22 @@ window.ANIMVERSE_BRIEF = {
   series: "Solo Leveling",
   duration: 15,
   updated: "2026-11-10",
-  modelBudget: "Free assets only. No paid model purchases.",
+  modelBudget: "No paid source-model purchases. The user separately approved 23 Meshy credits for one new Jin-Woo design, textured model, and body rig; those stages are complete.",
+  production: {
+    updated: "2026-11-11",
+    characterSource: "Newly generated model matching the approved Kaif.3D preview direction",
+    status: "Base model and body rig inspected; cinematic cleanup required",
+    localRig: "assets/incoming/jinwoo/generated/jinwoo-rigged-v1.glb",
+    record: "assets/incoming/jinwoo/generated/jinwoo-production-v1.record.json",
+    reviewUrl: "http://127.0.0.1:4176/review.html",
+    triangles: 29691,
+    bodyJoints: 24,
+    fingerJoints: 0,
+    facialMorphTargets: 0,
+    creditsConsumed: 23,
+    remainingWork: ["Clean up face/hair surface artifacts", "Add facial and finger controls", "Resolve coat weighting and eye-material control", "Author the command and one soldier's response"],
+    catalogSelectionNote: "The hosted free-model selections below are original alternatives; no Sketchfab source package has been imported."
+  },
   selectedModelIds: ["jinwoo-fbx", "igris-animated"],
   previewCollections: [
     {
@@ -114,7 +129,7 @@ window.ANIMVERSE_BRIEF = {
     }
   ],
   assets: [
-    { id: "JW-01", category: "Characters", name: "Jin-Woo / Shadow Monarch", need: "One recognizable character with an expressive face, black coat, hair, eye materials, and a deforming humanoid skeleton.", acceptance: "Inspect face, fingers, shoulders, coat weighting, and materials in motion. The chosen outfit must match the intended Shadow Monarch interpretation.", status: "Free model selected; signed-in download needed", candidateIds: ["jinwoo-fbx"] },
+    { id: "JW-01", category: "Characters", name: "Jin-Woo / Shadow Monarch", need: "One recognizable character with an expressive face, black coat, hair, eye materials, and a deforming humanoid skeleton.", acceptance: "Inspect face, fingers, shoulders, coat weighting, and materials in motion. The chosen outfit must match the intended Shadow Monarch interpretation.", status: "Generated base and body rig inspected; face/finger/coat cleanup required", candidateIds: ["jinwoo-fbx"] },
     { id: "IG-01", category: "Characters", name: "Igris / named commander", need: "A recognizable shadow-form Igris, with helmet silhouette, plume, armor, weapon, and a usable skeleton.", acceptance: "Inspect the shoulder and knee deformation, sword grip, shadow-form materials, and the intended kneeling performance.", status: "Free animated model selected; package unverified", candidateIds: ["igris-animated"] },
     { id: "SH-01", category: "Characters", name: "Shadow infantry", need: "One reusable rigged 3D armored infantry body with 2–3 silhouette variants. Start with 8 foreground soldiers; use simplified 3D meshes for distant ranks.", acceptance: "Correct Solo Leveling visual language, clean instancing, and variation in timing and pose. Every soldier uses a 3D mesh and rig; sprite sheets and billboard characters are excluded.", status: "Source or author; rigging required", candidateIds: ["shadow-knight"] },
     { id: "ENV-01", category: "Environment", name: "Ruined stone hall", need: "A modular floor, several columns, and enough depth for an aisle and two ranks. Create a simple blocking hall first.", acceptance: "Readable silhouettes, predictable scale, and enough space for the six camera positions. An elaborate environment is not needed for the first animation proof.", status: "Build simple blocking geometry", candidateIds: [] },
@@ -135,15 +150,15 @@ window.ANIMVERSE_BRIEF = {
   candidates: [],
   decisions: [
     { label: "Pilot length", value: "15 seconds", note: "A working timing proposal for six distinct beats." },
-    { label: "Visual interpretation", value: "Shadow Monarch", note: "Black coat, human face, blue-violet shadow energy. The free long-coat Jin-Woo is the starting choice; inspect the downloaded package before adaptation." },
+    { label: "Visual interpretation", value: "Shadow Monarch", note: "Dark navy coat, white shirt, human face, and blue-violet shadow energy. The newly generated matching model is the current base; face/finger/coat cleanup remains before cinematic acceptance." },
     { label: "Commander", value: "Igris", note: "One named commander establishes Jin-Woo's relationship to his army." },
     { label: "Platform placement", value: "Still to decide", note: "The sequence can support a character reveal or a featured platform entrance. It will not be forced onto every navigation." },
     { label: "Character animation", value: "Rigged 3D models", note: "Jin-Woo and the entire army use 3D meshes and rigs. No sprite-based character animation. Choose live or rendered delivery of the 3D scene after blocking." },
     { label: "Next production milestone", value: "Rig and motion proof", note: "One Jin-Woo rig, one soldier, and the command-to-emergence beat in simple geometry." }
   ],
   nextProof: [
-    "Download the selected free Jin-Woo and Igris packages through Sketchfab's signed-in flow, then inspect materials, skeletons, and included clips.",
-    "Test Jin-Woo's head, shoulder, finger, and coat deformation in a close-up.",
+    "Clean up the generated Jin-Woo face/hair surfaces, add missing facial/finger controls, and resolve coat weighting and eye-material control. Acquire and inspect the free Igris package separately.",
+    "Repeat close-up and gesture deformation checks after cleanup; the base body rig and supplied walking/running samples are already inspected.",
     "Block the command-to-emergence beat with one soldier in a plain hall.",
     "Measure the browser load and frame time, and compare with the quality of a rendered clip.",
     "Expand the approved motion into the army formation and the complete 15-second sequence."

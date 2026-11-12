@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jin-Woo — generated model inspection</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#15141b;color:#eee8fa;font:14px system-ui,sans-serif}header{padding:20px 28px;border-bottom:1px solid #40384c;display:flex;gap:20px;align-items:center;flex-wrap:wrap}h1{font-size:21px;margin:0}header p{color:#bbb0c9;margin:5px 0 0;font-size:12px}button,select{background:#292231;color:#eee8fa;border:1px solid #685478;padding:9px 12px;font:inherit;cursor:pointer}button:focus-visible,select:focus-visible{outline:2px solid #d0b3ff;outline-offset:3px}.controls{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}#stage{height:calc(100vh - 172px);min-height:430px;position:relative}canvas{display:block;width:100%;height:100%}#status{position:absolute;left:24px;bottom:18px;padding:10px 14px;background:#15141bdd;color:#ccc1db;font-size:12px;max-width:90%}footer{padding:14px 28px;border-top:1px solid #40384c;color:#bcb0c9;font-size:12px;line-height:1.7}footer a{color:#dbc4fa}#diagnostics{display:none}@media(max-width:700px){header{padding:16px}.controls{margin-left:0}#stage{height:65vh}footer{padding:14px 16px}}
+  </style>
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+  <script src="review.js" type="module"></script>
+</head>
+<body>
+  <header><div><h1>Sung Jin-Woo / model inspection</h1><p>Orbit to inspect the model. Walk and run are rig tests.</p></div><div class="controls"><label>Clip <select id="clip"><option value="rigged">Body rig / rest pose</option><option value="walking">Walking</option><option value="running">Running</option></select></label><button id="pause" type="button">Pause</button><button id="front" type="button">Front</button><button id="side" type="button">Side</button><button id="back" type="button">Back</button><button id="close" type="button">Face</button></div></header>
+  <main id="stage" aria-label="Interactive generated Jin-Woo 3D model"><div id="status" role="status">Loading local GLB…</div></main>
+  <footer>New model based on the approved design reference. 29,691 triangles · 24 joints · 1.8 m working height.<br>Finger controls, facial acting, eye materials, and coat weighting still need an intro-specific pass. <a href="jinwoo-rigged-v1.glb" download>Download rigged GLB</a> · <a href="jinwoo-design-v1.png">Design reference</a></footer>
+  <pre id="diagnostics"></pre>
+</body>
+</html>

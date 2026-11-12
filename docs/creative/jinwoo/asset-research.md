@@ -1,6 +1,6 @@
 # Jin-Woo intro — 3D asset research
 
-Researched 9 November 2026 through public Sketchfab catalog pages and API metadata. The repository currently contains no GLB, glTF, FBX, Blender, or BVH assets.
+Researched 9 November 2026 through public Sketchfab catalog pages and API metadata. Update 11 November: a newly generated Jin-Woo base model, body rig, and walk/run GLBs now exist in `assets/incoming/jinwoo/generated/`. This is separate from the catalog packages below; see [model-production.md](model-production.md) for actual inspection findings and remaining cinematic work.
 
 **Required asset type:** rigged 3D character meshes and skeletal animation, with facial controls where needed. Sprite sheets, animated 2D cutouts, and billboard characters do not satisfy this requirement. Optimize distant army ranks with simplified 3D meshes and shared animation.
 

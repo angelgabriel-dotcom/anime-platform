@@ -2,6 +2,14 @@
 
 Creative brief 0.1 · updated 10 November 2026 · first character-intro pilot
 
+**Production update · 11 November:** the user chose a newly created Jin-Woo
+matching Kaif.3D's hosted preview. The approved design, textured GLB, and body
+rig are saved locally; 23 generation credits were explicitly approved and
+consumed. The base rig works, but face/hair surface cleanup, facial/finger
+controls, and coat weighting remain before cinematic acceptance. See
+[model-production.md](model-production.md). The catalog shortlist below is
+historical sourcing context; Igris's source package is still unacquired.
+
 **He gives the order. The battlefield becomes his army.**
 
 Animverse is the larger anime platform; Shadow Arena is one feature within it. Its character introductions should express each character's own identity, abilities, allies, and presence. This first sequence centers on Sung Jin-Woo's authority as the Shadow Monarch and the army that answers him.

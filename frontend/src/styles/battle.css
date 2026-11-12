@@ -1,0 +1,175 @@
+.animverse-arena { min-height: 100vh; background: #0c0b11; color: #f2eef9; font-family: "Inter", sans-serif; }
+.animverse-arena button, .animverse-arena input, .animverse-arena select { font-family: inherit; }
+.animverse-arena h1, .animverse-arena h2, .animverse-arena h3 { font-family: "Barlow Condensed", sans-serif; letter-spacing: 0; }
+.animverse-arena a:hover { text-decoration: none; }
+.arena-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+.arena-skip { position: fixed; top: -100px; left: 20px; z-index: 1000; padding: 14px 22px; background: #d8c6ff; color: #191122; }
+.arena-skip:focus { top: 12px; }
+.arena-main { max-width: 1440px; margin: auto; padding: 0 28px; }
+.arena-eyebrow { font-size: 9px; font-weight: 600; letter-spacing: 1.6px; color: #a99abb; }
+.arena-breadcrumb { display: flex; gap: 13px; align-items: center; padding: 26px 0; font-size: 10px; color: #a39dae; }
+.arena-breadcrumb a { color: #a39dae; }
+.arena-breadcrumb > span:nth-child(2) { color: #595262; }
+.arena-breadcrumb > span:nth-child(3) { color: #ded5ea; }
+.arena-prototype { margin-left: auto; letter-spacing: 1.4px; font-size: 8px; }
+.arena-heading { display: flex; align-items: center; justify-content: space-between; gap: 25px; padding: 8px 0 30px; }
+.arena-heading h1 { font-size: clamp(48px, 5vw, 70px); font-weight: 600; line-height: 1.08; margin: 5px 0 10px; }
+.arena-heading h1 > span, .arena-section-heading h2 > span { color: #c3a7ff; }
+.arena-heading p { color: #a39dae; font-size: 12px; }
+.arena-mode-picker { text-align: right; }
+.arena-mode-tabs { padding: 4px; background: #14121a; border: 1px solid #302a3a; display: flex; gap: 4px; }
+.arena-mode-tabs button { text-transform: capitalize; font-size: 11px; letter-spacing: 0; padding: 11px 25px; color: #a39dae; background: transparent; border: 1px solid transparent; }
+.arena-mode-tabs button[aria-pressed="true"] { color: #e9dcff; background: #292033; border-color: #574469; }
+.arena-mode-picker > span { display: block; color: #8f859c; font-size: 9px; margin-top: 10px; }
+.arena-stage { border: 1px solid #393040; background: #15111c; position: relative; }
+.arena-stage-topline { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: #17131c; border-bottom: 1px solid #393040; font-size: 8px; letter-spacing: 1.5px; color: #b7a9c7; }
+.arena-stage-topline > span:first-child { display: flex; align-items: center; gap: 9px; }
+.arena-stage-topline > span:last-child { color: #80748d; }
+.arena-fighters { position: relative; display: grid; grid-template-columns: 1fr 1fr; }
+.arena-fighter { position: relative; min-height: 405px; isolation: isolate; overflow: hidden; background: radial-gradient(ellipse at 60% 55%, color-mix(in srgb, var(--fighter-color) 15%, transparent), transparent 68%), #15111c; }
+.arena-fighter-a { border-right: 1px solid #393040; }
+.arena-fighter-b { background-color: #10141d; }
+.arena-fighter::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: -1; background: linear-gradient(0deg, #111017 1%, #111017e8 9%, #11101770 30%, transparent 70%); }
+.arena-fighter.is-editing { box-shadow: inset 0 2px var(--fighter-color); }
+.arena-art-word { position: absolute; left: 7%; top: 45px; font-family: "Barlow Condensed", sans-serif; font-size: 170px; font-weight: 700; color: var(--fighter-color); opacity: .07; line-height: 1; z-index: -2; }
+.arena-fighter-art { position: absolute; right: -2%; top: 15px; width: 82%; height: 112%; object-fit: contain; object-position: top; z-index: -2; }
+.arena-fighter-b .arena-fighter-art { right: -6%; }
+.arena-slot-tools { position: relative; display: flex; justify-content: space-between; align-items: center; padding: 20px 22px; }
+.arena-slot { display: flex; align-items: center; gap: 10px; font-size: 8px; font-weight: 600; letter-spacing: 1.3px; color: #cfc4dd; border: 1px solid #51445d; padding: 8px 10px; background: #15111ccc; }
+.arena-slot span { color: var(--fighter-color); }
+.arena-slot[aria-pressed="true"] { border-color: var(--fighter-color); }
+.arena-slot:hover:not(:disabled) { background: #30263d; }
+.arena-clear { background: #17131bd9; border: 1px solid #413547; color: #baacc8; width: 29px; height: 29px; display: grid; place-items: center; }
+.arena-fighter-copy { position: absolute; bottom: 25px; left: 28px; right: 28px; }
+.arena-fighter-copy > .arena-eyebrow { display: flex; gap: 9px; align-items: center; color: var(--fighter-color); font-size: 8px; letter-spacing: 1.4px; }
+.arena-fighter-copy > .arena-eyebrow i { width: 3px; height: 3px; background: var(--fighter-color); }
+.arena-fighter-copy h2 { font-size: clamp(32px, 3.2vw, 46px); line-height: 1.15; font-weight: 600; margin-top: 8px; }
+.arena-fighter-copy > p { font-size: 10px; color: #c0b6cc; margin: 4px 0 17px; }
+.arena-preview-stats { display: flex; gap: 28px; padding-top: 15px; border-top: 1px solid #ffffff15; max-width: 310px; }
+.arena-preview-stats dt { text-transform: uppercase; font-size: 7px; letter-spacing: 1.3px; color: #a197ad; }
+.arena-preview-stats dd { font-size: 15px; color: #ede4f8; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.arena-resources { display: grid; gap: 9px; max-width: 370px; }
+.arena-resource > div:first-child { display: flex; justify-content: space-between; font-size: 9px; margin-bottom: 4px; }
+.arena-resource > div:first-child > span { color: #ada1bb; }
+.arena-resource b { font-size: 9px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.arena-resource b span { color: #93879f; font-size: 8px; }
+.arena-resource > div:last-child { height: 4px; background: #ffffff12; }
+.arena-resource i { display: block; height: 100%; background: var(--fighter-color); transition: width .25s ease; }
+.arena-resource-mana i { background: #a2a5d1; }
+.arena-versus { position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%); width: 70px; height: 70px; display: grid; place-items: center; background: #19131f; border: 1px solid #665075; rotate: -45deg; }
+.arena-versus span { font-family: "Barlow Condensed", sans-serif; font-size: 30px; font-weight: 600; color: #dcc8f5; rotate: 45deg; }
+.arena-versus i { position: absolute; inset: 6px; border: 1px solid #352a3e; }
+.arena-empty-slot { position: absolute; inset: 75px 0 25px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: transparent; color: #bca6d3; padding: 20px; }
+.arena-empty-slot h2 { font-size: 35px; color: #ddd2e9; margin: 16px 0 7px; }
+.arena-empty-slot p { font-size: 11px; color: #a398ae; }
+.arena-empty-slot > span { font-size: 10px; display: flex; align-items: center; gap: 10px; margin-top: 24px; }
+.arena-command { border-top: 1px solid #393040; padding: 22px 26px; background: #1a1422; display: flex; gap: 20px; align-items: center; justify-content: space-between; }
+.arena-command-status { display: flex; gap: 15px; align-items: center; min-width: 0; }
+.arena-status-icon { color: #c4a6e9; width: 45px; height: 45px; border: 1px solid #493754; display: grid; place-items: center; flex-shrink: 0; }
+.arena-command-status .arena-eyebrow { font-size: 7px; }
+.arena-command-status p { font-family: "Barlow Condensed", sans-serif; font-size: 26px; font-weight: 500; line-height: 1.25; margin-top: 3px; }
+.arena-command-detail { display: block; font-size: 9px; color: #a99bb9; margin-top: 6px; }
+.arena-command-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.arena-button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 13px 20px; font-size: 11px; font-weight: 600; border: 1px solid; }
+.arena-button-primary { background: #c6aaf5; border-color: #c6aaf5; color: #1c122b; }
+.arena-button-primary:hover:not(:disabled) { background: #ddc6ff; border-color: #ddc6ff; }
+.arena-button-secondary { color: #e0d3ed; border-color: #52425e; background: #21192c; }
+.arena-button-secondary:hover:not(:disabled) { background: #352843; border-color: #967ab0; }
+.arena-command-complete { background: #221b1a; border-top-color: #655040; }
+.arena-command-complete .arena-status-icon { color: #e9c394; border-color: #66503c; }
+.arena-command-complete .arena-eyebrow { color: #dfb780; }
+.arena-fighter.is-winner { box-shadow: inset 0 2px #e9c394; }
+.arena-error { display: flex; gap: 14px; padding: 18px 20px; margin-top: 16px; background: #301b25; border: 1px solid #753b52; color: #efabc1; font-size: 12px; align-items: center; }
+.arena-error strong { font-weight: 500; }.arena-error p { font-size: 10px; color: #d2a8b6; margin-top: 4px; }
+.arena-error button { margin-left: auto; background: transparent; color: #efabc1; padding: 8px; }
+.arena-roster { padding-top: 35px; }
+.arena-section-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.arena-section-heading h2 { font-size: 36px; line-height: 1.2; font-weight: 500; margin-top: 5px; }
+.arena-selection-hint { display: flex; align-items: center; gap: 10px; font-size: 9px; color: #c5b3d9; }
+.arena-selection-hint i { width: 5px; height: 5px; background: #c3a7ff; border-radius: 50%; }
+.arena-roster-toolbar { display: flex; justify-content: space-between; gap: 15px; align-items: center; margin: 20px 0 18px; }
+.arena-slot-picker { display: flex; gap: 6px; }
+.arena-slot-picker button { background: #15121b; color: #a399b1; padding: 9px 15px; border: 1px solid #332c3d; font-size: 10px; }
+.arena-slot-picker button[aria-pressed="true"] { background: #2b2039; border-color: #775992; color: #ddc5f7; }
+.arena-search { display: flex; align-items: center; gap: 10px; border: 1px solid #342e3e; background: #14111b; color: #b5a5c9; width: 260px; padding: 9px 12px; }
+.arena-search input { width: 100%; min-width: 0; border: 0; background: transparent; color: #eee4f9; font-size: 10px; line-height: 1.6; outline-offset: 2px; }
+.arena-search input::placeholder { color: #9c90aa; }
+.arena-roster-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+.arena-roster-card { display: block; text-align: left; background: #16121c; border: 1px solid #352d3e; color: #ede4f7; min-width: 0; position: relative; }
+.arena-roster-card:hover:not(:disabled) { border-color: var(--fighter-color); background: #241c2e; }
+.arena-roster-card.is-selected { border-color: var(--fighter-color); }
+.arena-roster-card:disabled { opacity: 1; }
+.arena-roster-art { display: block; position: relative; height: 205px; overflow: hidden; background: radial-gradient(ellipse at 50% 60%, color-mix(in srgb, var(--fighter-color) 17%, transparent), transparent 80%); }
+.arena-roster-art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #16121c, transparent 38%); pointer-events: none; }
+.arena-roster-art img { display: block; width: 100%; height: 125%; object-fit: contain; object-position: top; }
+.arena-roster-tier { position: absolute; top: 12px; right: 11px; z-index: 1; color: var(--fighter-color); font-family: "Barlow Condensed", sans-serif; font-size: 17px; font-weight: 600; }
+.arena-roster-assigned { position: absolute; bottom: 8px; left: 11px; right: 11px; z-index: 1; background: color-mix(in srgb, var(--fighter-color) 15%, #16121c); border: 1px solid color-mix(in srgb, var(--fighter-color) 60%, transparent); color: var(--fighter-color); font-size: 7px; letter-spacing: 1px; text-align: center; padding: 6px 4px; }
+.arena-roster-info { display: flex; flex-direction: column; gap: 4px; padding: 12px 13px 17px; }
+.arena-roster-info > span:first-child { color: var(--fighter-color); font-size: 8px; }
+.arena-roster-info > strong { font-family: "Barlow Condensed", sans-serif; font-size: 23px; font-weight: 500; line-height: 1.1; }
+.arena-roster-info > span:last-child { color: #aaa0b5; font-size: 8px; margin-top: 3px; }
+.arena-no-results { padding: 35px 20px; border: 1px solid #352d3e; text-align: center; font-size: 12px; color: #b9a9cb; }
+.arena-no-results button { margin-top: 15px; }
+.arena-match-notes { display: grid; grid-template-columns: 1fr 1fr; margin-top: 28px; border-top: 1px solid #302838; border-bottom: 1px solid #302838; }
+.arena-match-notes > div { padding: 24px 0; }
+.arena-match-notes > div:last-child { padding-left: 28px; border-left: 1px solid #302838; }
+.arena-match-notes .arena-eyebrow { color: var(--fighter-color); font-size: 8px; }
+.arena-match-notes h3 { font-size: 27px; font-weight: 500; margin-top: 5px; }
+.arena-match-notes p { font-size: 10px; color: #a69ab3; margin-top: 6px; }
+.arena-battle-log { margin-top: 35px; }
+.arena-speed { display: flex; gap: 12px; align-items: center; font-size: 9px; color: #b9abc7; }
+.arena-speed select { color: #dfc8f6; background: #21182c; border: 1px solid #534162; padding: 8px 10px; font-size: 11px; }
+.arena-log-progress { margin-top: 20px; padding: 14px 17px; border: 1px solid #3c3048; background: #1c1524; display: flex; align-items: center; gap: 20px; font-size: 9px; color: #bda8d2; }
+.arena-log-progress > div { flex: 1; background: #35273f; height: 3px; }
+.arena-log-progress i { display: block; height: 100%; background: #c3a7ff; transition: width .2s; }
+.arena-log-entries { list-style: none; max-height: 340px; overflow-y: auto; border: 1px solid #352b3e; border-top: 0; background: #141019; }
+.arena-log-entry { --event-color: #b5a5c6; display: grid; grid-template-columns: 28px 1fr auto; align-items: start; gap: 16px; padding: 15px 18px; border-bottom: 1px solid #ffffff08; }
+.arena-log-turn { font-family: "Barlow Condensed", sans-serif; font-size: 21px; color: #8a799c; }
+.arena-event-label { color: var(--event-color); font-size: 8px; letter-spacing: 1px; text-transform: uppercase; }
+.arena-log-ability { color: #dcc9ed; font-size: 9px; margin-left: 15px; }
+.arena-log-entry p { font-size: 10px; color: #b8acbf; margin-top: 5px; line-height: 1.7; }
+.arena-log-damage { font-size: 12px; font-weight: 500; color: var(--event-color); padding-top: 7px; font-variant-numeric: tabular-nums; }
+.arena-event-special_skill { --event-color: #c6a0f1; }.arena-event-critical_hit { --event-color: #e99cad; }.arena-event-evaded { --event-color: #93c9db; }.arena-event-knockout { --event-color: #e8c089; }
+.arena-log-waiting { padding: 28px 20px; font-size: 11px; color: #b6a3c9; }
+.arena-log-footer { display: flex; justify-content: space-between; align-items: center; gap: 15px; padding: 15px 18px; border: 1px solid #5c4734; background: #251d17; }
+.arena-log-footer span, .arena-log-footer button { display: flex; gap: 10px; align-items: center; font-size: 10px; color: #e2bc8c; }
+.arena-log-footer button { background: transparent; }
+.arena-footer { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 28px 0 32px; }
+.arena-footer a { display: flex; align-items: center; gap: 10px; color: #b6a4c8; font-size: 10px; }
+.arena-footer > span { font-size: 7px; letter-spacing: 1.5px; color: #95849e; }
+@media (max-width: 1100px) {
+  .arena-fighter { min-height: 370px; }.arena-fighter-art { width: 95%; right: -8%; }.arena-fighter-b .arena-fighter-art { right: -12%; }
+  .arena-roster-grid { gap: 10px; }.arena-roster-art { height: 170px; }.arena-roster-info { padding-inline: 10px; }.arena-roster-info > strong { font-size: 21px; }.arena-roster-info > span:last-child { font-size: 7px; }
+  .arena-command-detail { max-width: 340px; line-height: 1.7; }.arena-art-word { font-size: 135px; }
+}
+@media (max-width: 800px) {
+  .arena-main { padding-inline: 22px; }.arena-heading { align-items: flex-start; }.arena-heading h1 { font-size: 54px; }.arena-mode-tabs button { padding: 9px 15px; }.arena-mode-picker { padding-top: 15px; }
+  .arena-fighter { min-height: 350px; }.arena-fighter-art { width: 120%; right: -25%; height: 100%; top: 32px; }.arena-fighter-b .arena-fighter-art { right: -28%; }
+  .arena-slot-tools { padding: 17px 14px; }.arena-slot { font-size: 7px; padding: 7px; gap: 6px; }.arena-slot svg { display: none; }.arena-clear { width: 25px; height: 25px; }
+  .arena-fighter-copy { left: 19px; right: 19px; bottom: 20px; }.arena-fighter-copy h2 { font-size: 34px; }.arena-preview-stats { gap: 21px; }.arena-preview-stats dd { font-size: 13px; }
+  .arena-versus { width: 51px; height: 51px; }.arena-versus span { font-size: 26px; }.arena-command { padding: 19px; }.arena-status-icon { display: none; }.arena-button { padding: 12px 14px; font-size: 10px; gap: 8px; }.arena-command-detail { max-width: 260px; }
+  .arena-roster-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }.arena-roster-art { height: 215px; }.arena-roster-info > strong { font-size: 24px; }.arena-roster-info > span:last-child { font-size: 8px; }
+  .arena-match-notes h3 { font-size: 25px; }.arena-match-notes p { font-size: 9px; }
+}
+@media (max-width: 600px) {
+  .arena-main { padding-inline: 16px; }.arena-breadcrumb { padding-block: 21px; font-size: 9px; }.arena-prototype { font-size: 7px; letter-spacing: 1px; }
+  .arena-heading { flex-direction: column; gap: 18px; padding: 4px 0 22px; }.arena-heading h1 { font-size: 54px; }.arena-heading p { font-size: 11px; }.arena-mode-picker { padding: 0; width: 100%; text-align: left; }.arena-mode-tabs button { flex: 1; padding: 8px 15px; font-size: 10px; }.arena-mode-picker > span { font-size: 8px; margin-top: 8px; }
+  .arena-stage-topline { padding: 10px 12px; font-size: 7px; }.arena-fighter { min-height: 305px; }.arena-slot-tools { padding: 13px 10px; }.arena-slot { font-size: 6px; letter-spacing: .7px; padding: 6px; gap: 5px; }.arena-clear { width: 21px; height: 21px; }.arena-clear svg { width: 13px; height: 13px; }
+  .arena-fighter-art { top: 35px; width: 140%; right: -42%; height: 89%; }.arena-fighter-b .arena-fighter-art { right: -43%; }.arena-fighter::after { background: linear-gradient(0deg, #111017 1%, #111017ef 14%, #11101780 35%, transparent 65%); }
+  .arena-fighter-copy { left: 12px; right: 12px; bottom: 16px; }.arena-fighter-copy > .arena-eyebrow { font-size: 6px; letter-spacing: .5px; gap: 5px; flex-wrap: wrap; }.arena-fighter-copy h2 { font-size: 28px; }.arena-fighter-copy > p { font-size: 8px; margin: 4px 0 12px; }.arena-art-word { font-size: 90px; top: 55px; }
+  .arena-preview-stats { gap: 12px; padding-top: 10px; justify-content: space-between; }.arena-preview-stats dt { font-size: 6px; letter-spacing: .4px; }.arena-preview-stats dd { font-size: 12px; }
+  .arena-versus { width: 38px; height: 38px; top: 37%; }.arena-versus span { font-size: 22px; }.arena-versus i { inset: 4px; }
+  .arena-resource > div:first-child, .arena-resource b { font-size: 7px; }.arena-resource b span { font-size: 6px; }.arena-resources { gap: 7px; }.arena-resource > div:last-child { height: 3px; }
+  .arena-empty-slot { padding: 12px; top: 50px; }.arena-empty-slot h2 { font-size: 26px; line-height: 1.15; text-align: center; }.arena-empty-slot p { font-size: 9px; text-align: center; }.arena-empty-slot > span { font-size: 8px; gap: 6px; }
+  .arena-command { flex-direction: column; align-items: stretch; gap: 18px; padding: 19px 16px; }.arena-command-status p { font-size: 27px; }.arena-command-detail { max-width: none; font-size: 9px; }.arena-command-actions { width: 100%; }.arena-command-actions .arena-button { flex: 1; }.arena-button { font-size: 10px; padding-block: 12px; }
+  .arena-roster { padding-top: 28px; }.arena-section-heading { flex-wrap: wrap; gap: 10px; }.arena-section-heading h2 { font-size: 32px; }.arena-section-heading .arena-eyebrow { font-size: 8px; }.arena-selection-hint { font-size: 8px; }
+  .arena-roster-toolbar { flex-direction: column; align-items: stretch; gap: 10px; margin: 17px 0 14px; }.arena-slot-picker button { flex: 1; }.arena-search { width: 100%; }
+  .arena-roster-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }.arena-roster-art { height: 190px; }.arena-roster-info { padding: 11px 10px 15px; }.arena-roster-info > strong { font-size: 23px; }.arena-roster-info > span:first-child, .arena-roster-info > span:last-child { font-size: 8px; }
+  .arena-match-notes { grid-template-columns: 1fr; margin-top: 24px; }.arena-match-notes > div { padding: 21px 0; }.arena-match-notes > div:last-child { padding-left: 0; border-left: 0; border-top: 1px solid #302838; }
+  .arena-battle-log { margin-top: 28px; }.arena-speed { font-size: 8px; }.arena-log-progress { gap: 12px; padding-inline: 12px; font-size: 8px; }.arena-log-entry { padding: 13px 12px; grid-template-columns: 20px 1fr auto; gap: 9px; }.arena-log-entry p { font-size: 9px; }.arena-log-ability { display: block; margin: 3px 0 0; font-size: 8px; }.arena-log-damage { font-size: 10px; }.arena-log-footer { align-items: flex-start; }.arena-log-footer span, .arena-log-footer button { font-size: 9px; }
+  .arena-footer { flex-wrap: wrap; gap: 18px; padding-top: 24px; }.arena-footer > span { order: 3; width: 100%; }.arena-footer a { font-size: 9px; }
+}
+@media (max-width: 370px) {
+  .arena-fighter-copy h2 { font-size: 25px; }.arena-fighter-copy { left: 10px; right: 10px; }.arena-preview-stats { gap: 6px; }.arena-slot { font-size: 5px; }.arena-roster-art { height: 166px; }.arena-roster-info > strong { font-size: 21px; }.arena-roster-info > span:last-child { font-size: 7px; }.arena-prototype { display: none; }.arena-log-footer { flex-direction: column; }.arena-resource b span { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .animverse-arena *, .animverse-arena *::before, .animverse-arena *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }

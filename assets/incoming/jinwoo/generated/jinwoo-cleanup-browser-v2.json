@@ -1,0 +1,18 @@
+{
+  "tool": "Headless Chrome / Three.js r170",
+  "checks": [
+    {
+      "case": "face-rays",
+      "ready": true,
+      "errors": [],
+      "file": "jinwoo-rigged-v2.glb",
+      "triangles": 29674,
+      "joints": 36,
+      "clipDuration": 0,
+      "skinnedMeshes": 1,
+      "textureLoaded": true,
+      "screenshot": "jinwoo-face-rays-v2.png"
+    }
+  ],
+  "runtime_exceptions": []
+}

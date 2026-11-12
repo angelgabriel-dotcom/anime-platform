@@ -3,5 +3,8 @@
 !README.md
 !jinwoo/
 !jinwoo/README.md
+!jinwoo/generated/
+!jinwoo/generated/**
+jinwoo/generated/*.blend1
 !igris/
 !igris/README.md

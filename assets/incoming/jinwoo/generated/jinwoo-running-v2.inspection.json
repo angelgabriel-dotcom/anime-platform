@@ -1,0 +1,126 @@
+{
+  "file": "/home/a/anime-platform/assets/incoming/jinwoo/generated/jinwoo-running-v2.glb",
+  "file_size_bytes": 4348080,
+  "sha256": "3331f89746511684b2a398daa9e79017c4de65df665ce2bface5e569ae44e0ba",
+  "glb_version": 2,
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v4.5.51",
+    "version": "2.0"
+  },
+  "extensions_required": [],
+  "mesh_count": 1,
+  "total_triangles": 29674,
+  "primitives": [
+    {
+      "mesh_index": 0,
+      "primitive_index": 0,
+      "name": "JinWoo_CleanedSurface",
+      "vertices": 22791,
+      "triangles": 29674,
+      "mode": 4,
+      "attributes": [
+        "JOINTS_0",
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0",
+        "WEIGHTS_0"
+      ],
+      "material": 0,
+      "local_bounds_min": [
+        -0.8167938590049744,
+        1.6716363404611911e-07,
+        -0.2167944610118866
+      ],
+      "local_bounds_max": [
+        0.8167934417724609,
+        1.8000009059906006,
+        0.2167946696281433
+      ],
+      "morph_target_count": 0,
+      "weight_sum_range": [
+        0.9999999003484845,
+        1.000000100582838
+      ],
+      "zero_weight_vertices": 0
+    }
+  ],
+  "node_count": 38,
+  "skins": [
+    {
+      "name": "Armature",
+      "joint_count": 36,
+      "joint_names": [
+        "Hips",
+        "Spine02",
+        "Spine01",
+        "Spine",
+        "neck",
+        "Head",
+        "head_end",
+        "headfront",
+        "LeftShoulder",
+        "LeftArm",
+        "LeftForeArm",
+        "LeftHand",
+        "RightShoulder",
+        "RightArm",
+        "RightForeArm",
+        "RightHand",
+        "LeftUpLeg",
+        "LeftLeg",
+        "LeftFoot",
+        "LeftToeBase",
+        "RightUpLeg",
+        "RightLeg",
+        "RightFoot",
+        "RightToeBase",
+        "Coat_FrontLeft_Upper",
+        "Coat_FrontLeft_Lower",
+        "Coat_SideLeft_Upper",
+        "Coat_SideLeft_Lower",
+        "Coat_BackLeft_Upper",
+        "Coat_BackLeft_Lower",
+        "Coat_BackRight_Upper",
+        "Coat_BackRight_Lower",
+        "Coat_SideRight_Upper",
+        "Coat_SideRight_Lower",
+        "Coat_FrontRight_Upper",
+        "Coat_FrontRight_Lower"
+      ],
+      "inverse_bind_matrices": true
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Material_0",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "images": [
+    {
+      "bufferView": 6,
+      "mimeType": "image/png",
+      "name": "Image_0"
+    }
+  ],
+  "external_dependencies": [],
+  "animations": [
+    {
+      "name": "Armature|running|baselayer",
+      "duration_seconds": 0.6666666865348816,
+      "channels": 108,
+      "animated_paths": [
+        "rotation",
+        "scale",
+        "translation"
+      ]
+    }
+  ],
+  "note": "Structural inspection only; likeness and deformation require visual review."
+}

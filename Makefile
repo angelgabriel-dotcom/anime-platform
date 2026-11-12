@@ -2,7 +2,7 @@
 # Run `make help` to see all available commands
 
 .PHONY: help dev build test clean docker-up docker-down docker-reset \
-        migrate seed fmt vet storyboard
+        migrate seed fmt vet storyboard model-review
 
 # ── Variables ─────────────────────────────────────────────────────────────────
 BINARY_NAME = anime-platform
@@ -17,6 +17,7 @@ help:
 	@echo "  ────────────────────────────────────────"
 	@echo "  make dev          → run backend in dev mode (hot reload)"
 	@echo "  make storyboard   → serve the Jin-Woo creative review at localhost:4175"
+	@echo "  make model-review → inspect the local Jin-Woo model at localhost:4176/review.html"
 	@echo "  make build        → compile Go binary to ./bin/"
 	@echo "  make test         → run all Go tests"
 	@echo "  make fmt          → format all Go code"
@@ -32,6 +33,9 @@ help:
 # ── Development ───────────────────────────────────────────────────────────────
 storyboard:
 	python3 -m http.server 4175 --bind 127.0.0.1 --directory docs/creative/jinwoo
+
+model-review:
+	python3 -m http.server 4176 --bind 127.0.0.1 --directory assets/incoming/jinwoo/generated
 
 dev:
 	@echo "🚀 Starting backend in dev mode..."

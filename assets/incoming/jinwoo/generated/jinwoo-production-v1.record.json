@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "role": "Newly created Jin-Woo base model for the Arise intro",
+  "status": "Textured model and body rig generated; cinematic cleanup required",
+  "date": "2026-11-11",
+  "provider": "Meshy",
+  "reference": {
+    "kind": "Appearance reference only",
+    "creator": "Kaif.3D",
+    "listing": "https://sketchfab.com/3d-models/sung-jinwoo-solo-leveling-vrm-unity-unreal-3c539f932e254372a36a77e4113cb449",
+    "source_geometry_extracted": false
+  },
+  "approval": {
+    "design_credits": 3,
+    "additional_model_and_rig_credits": 20,
+    "total_approved": 23,
+    "total_consumed": 23,
+    "retries": 0,
+    "remaining_balance_after_completion": 57
+  },
+  "tasks": {
+    "design": {
+      "task_id": "01a1cac8-54a3-71e7-810c-26c9a7a77a5f",
+      "task_type": "text-to-image",
+      "ai_model": "nano-banana-2-lite",
+      "consumed_credits": 3,
+      "file": "jinwoo-design-v1.png"
+    },
+    "model": {
+      "task_id": "01a1cacf-e144-7450-a023-c291c98cc052",
+      "task_type": "image-to-3d",
+      "status": "SUCCEEDED",
+      "request": {
+        "input_task_id": "01a1cac8-54a3-71e7-810c-26c9a7a77a5f",
+        "ai_model": "meshy-t2.5",
+        "model_type": "smart-topology",
+        "texture_model": "meshy-n1",
+        "pose_mode": "t-pose",
+        "target_polycount": 30000,
+        "texture_resolution": "2k",
+        "should_texture": true,
+        "target_formats": [
+          "glb"
+        ],
+        "response_format": "json"
+      },
+      "consumed_credits": 15,
+      "file": "jinwoo-model-v1.glb",
+      "base_color": "jinwoo-model-v1_base_color.png"
+    },
+    "rig": {
+      "task_id": "01a1cade-4fba-7796-8803-bd54186d624f",
+      "task_type": "rigging",
+      "status": "SUCCEEDED",
+      "request": {
+        "input_task_id": "01a1cacf-e144-7450-a023-c291c98cc052",
+        "height_meters": 1.8,
+        "response_format": "json"
+      },
+      "consumed_credits": 5,
+      "file": "jinwoo-rigged-v1.glb",
+      "included_free_clips": [
+        "jinwoo-walking-v1.glb",
+        "jinwoo-running-v1.glb"
+      ]
+    }
+  },
+  "inspection": {
+    "glb_version": 2,
+    "triangles": 29691,
+    "vertices": 22793,
+    "meshes": 1,
+    "materials": 1,
+    "embedded_texture": true,
+    "external_model_dependencies": [],
+    "working_height_meters": 1.8,
+    "joints": 24,
+    "finger_joints": 0,
+    "facial_morph_targets": 0,
+    "zero_weight_vertices": 0,
+    "skin_weight_sum_range": [
+      0.9999998572748154,
+      1.0000001266598701
+    ],
+    "geometry_report": "jinwoo-model-v1.inspection.json",
+    "rig_report": "jinwoo-rigged-v1.inspection.json",
+    "browser_report": "jinwoo-browser-inspection-v1.json",
+    "browser_cases": 8,
+    "browser_runtime_exceptions": 0,
+    "visual_findings": [
+      "Recognizable overall silhouette and requested outfit in front/side/back views.",
+      "Arm, neck, and wrist sample rotations deform the body; finger joints and facial shape controls are absent.",
+      "Face and hair show visible surface/texture artifacts in the close-up; not accepted for the recognition shot.",
+      "Coat is part of the same skinned mesh and stretches with leg motion during running; it needs dedicated weighting/secondary-motion work.",
+      "The supplied walking/running clips are inspection samples; no Arise gesture, dialogue, soldier response, or intro has been authored."
+    ]
+  },
+  "viewer": {
+    "file": "review.html",
+    "local_url": "http://127.0.0.1:4176/review.html",
+    "command": "python3 -m http.server 4176 --bind 127.0.0.1 --directory assets/incoming/jinwoo/generated",
+    "library": "Three.js 0.170.0",
+    "library_license": "vendor/LICENSE"
+  },
+  "terms": {
+    "provider_terms_url": "https://www.meshy.ai/terms-of-use",
+    "note": "Output rights depend on the Meshy account's applicable terms; no CC BY license is inferred from the appearance reference."
+  }
+}

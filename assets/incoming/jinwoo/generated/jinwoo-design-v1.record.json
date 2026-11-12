@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "role": "Design reference for a newly created Jin-Woo 3D model",
+  "status": "Design approved; textured model and body rig completed; cinematic cleanup required",
+  "provider": "Meshy",
+  "task_type": "text-to-image",
+  "task_id": "01a1cac8-54a3-71e7-810c-26c9a7a77a5f",
+  "created_date": "2026-11-11",
+  "request": {
+    "ai_model": "nano-banana-2-lite",
+    "pose_mode": "t-pose",
+    "generate_multi_view": false,
+    "remove_background": false,
+    "response_format": "json",
+    "prompt": "Create a clean full-body character design reference for a new 3D Sung Jin-Woo model for an animated Solo Leveling character entrance. One adult male only, lean athletic human proportions, angular recognizable anime face, pale skin, short tousled black hair with a fringe, restrained blue-violet eyes, calm expression. Dark navy nearly black open long coat with raised collar and lapels, hem below the knees and open split lower panels. Plain white V-neck shirt, fitted black trousers, dark sneakers with white soles. Stylized anime 3D game-character appearance. Front view, facing the camera, neutral standing T-pose with both arms horizontal, straight wrists, visible separated fingers, legs slightly apart and both feet flat. Show the entire head, hands, coat hem, and shoes with a margin around the figure. Even soft studio lighting on a plain light-grey background; preserve face and dark-cloth detail. No second figure, weapons, armor, aura, smoke, pedestal, environment, text, logo, or watermark. This is a model-making reference, not the cinematic composition."
+  },
+  "consumed_credits": 3,
+  "approved_credits_for_this_stage": 3,
+  "artifact": "jinwoo-design-v1.png",
+  "visual_reference": {
+    "listing": "https://sketchfab.com/3d-models/sung-jinwoo-solo-leveling-vrm-unity-unreal-3c539f932e254372a36a77e4113cb449",
+    "creator": "Kaif.3D",
+    "relationship": "Appearance reference only; no source geometry, skeleton, or textures extracted."
+  },
+  "review": {
+    "appearance": "Single full-body Jin-Woo design, black hair, blue-violet eyes, dark navy long coat, white V-neck shirt, black trousers, dark sneakers with white soles.",
+    "pose_requested": "t-pose",
+    "pose_observed": "A-pose-like stance with arms lowered diagonally; not a horizontal T-pose.",
+    "limitations": [
+      "This PNG is a design reference, not a 3D model or animation asset.",
+      "Finger detail needs review in generated geometry.",
+      "No paid retry has been authorized or performed.",
+      "Request pose_mode t-pose for 3D generation; inspect the resulting actual pose before rigging.",
+      "Applicable provider terms and any output license must be recorded before shipping; a source-reference listing license is not assigned to this generated asset."
+    ]
+  },
+  "next_stage": {
+    "geometry_ai_model": "meshy-t2.5",
+    "model_type": "smart-topology",
+    "texture_model": "meshy-n1",
+    "pose_mode": "t-pose",
+    "target_polycount": 30000,
+    "texture_resolution": "2k",
+    "target_formats": [
+      "glb"
+    ],
+    "estimated_credits": 15,
+    "status": "SUCCEEDED",
+    "rigging_estimated_credits": 5,
+    "rigging_status": "SUCCEEDED; body rig inspected; face/finger/coat work remains",
+    "model_task_id": "01a1cacf-e144-7450-a023-c291c98cc052",
+    "model_file": "jinwoo-model-v1.glb",
+    "rig_task_id": "01a1cade-4fba-7796-8803-bd54186d624f",
+    "rig_file": "jinwoo-rigged-v1.glb",
+    "actual_additional_consumed_credits": 20,
+    "production_record": "jinwoo-production-v1.record.json"
+  }
+}

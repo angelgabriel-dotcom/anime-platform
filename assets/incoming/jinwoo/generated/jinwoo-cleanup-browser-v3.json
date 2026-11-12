@@ -1,0 +1,54 @@
+{
+  "tool": "Headless Chrome / Three.js r170",
+  "checks": [
+    {
+      "case": "face",
+      "ready": true,
+      "errors": [],
+      "file": "jinwoo-rigged-v3.glb",
+      "triangles": 29675,
+      "joints": 36,
+      "clipDuration": 0,
+      "skinnedMeshes": 1,
+      "textureLoaded": true,
+      "screenshot": "jinwoo-face-v3.png"
+    },
+    {
+      "case": "face-plain",
+      "ready": true,
+      "errors": [],
+      "file": "jinwoo-rigged-v3.glb",
+      "triangles": 29675,
+      "joints": 36,
+      "clipDuration": 0,
+      "skinnedMeshes": 1,
+      "textureLoaded": true,
+      "screenshot": "jinwoo-face-plain-v3.png"
+    },
+    {
+      "case": "run-side",
+      "ready": true,
+      "errors": [],
+      "file": "jinwoo-running-v3.glb",
+      "triangles": 29675,
+      "joints": 36,
+      "clipDuration": 0.6666666865348816,
+      "skinnedMeshes": 1,
+      "textureLoaded": true,
+      "screenshot": "jinwoo-run-side-v3.png"
+    },
+    {
+      "case": "walk-side",
+      "ready": true,
+      "errors": [],
+      "file": "jinwoo-walking-v3.glb",
+      "triangles": 29675,
+      "joints": 36,
+      "clipDuration": 1.0416666269302368,
+      "skinnedMeshes": 1,
+      "textureLoaded": true,
+      "screenshot": "jinwoo-walk-side-v3.png"
+    }
+  ],
+  "runtime_exceptions": []
+}

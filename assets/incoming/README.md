@@ -1,5 +1,10 @@
 # Free 3D model intake
 
+Jin-Woo now has a newly generated base model and body rig in
+[jinwoo/generated/](jinwoo/generated/README.md), following explicit approval
+of 23 generation credits. It still needs cinematic cleanup. The Sketchfab
+download instructions below remain applicable to Igris and alternative models.
+
 Download the selected packages through their official Sketchfab pages using a free account. No payment is needed for the current listings. The public model viewers do not download source files into this project.
 
 - **Jin-Woo:** save the complete download in [jinwoo/](jinwoo/README.md).

@@ -1,0 +1,100 @@
+{
+  "version": "v2",
+  "method": "local Blender mesh and weight repair",
+  "blender": "4.5.16 LTS",
+  "credits_consumed": 0,
+  "files": [
+    {
+      "kind": "rigged",
+      "source": "jinwoo-rigged-v1.glb",
+      "source_sha256": "a32985be7853b163d4399d15c0b43ccf58d9736fc088b9b71ccfc1c15411e42c",
+      "source_vertices": 22793,
+      "source_triangles": 29691,
+      "face_vertices_smoothed": 870,
+      "maximum_face_displacement_m": 0.006419233408944842,
+      "coat_vertices_reweighted": 1117,
+      "coat_control_joints": [
+        "Coat_FrontLeft_Upper",
+        "Coat_FrontLeft_Lower",
+        "Coat_SideLeft_Upper",
+        "Coat_SideLeft_Lower",
+        "Coat_BackLeft_Upper",
+        "Coat_BackLeft_Lower",
+        "Coat_BackRight_Upper",
+        "Coat_BackRight_Lower",
+        "Coat_SideRight_Upper",
+        "Coat_SideRight_Lower",
+        "Coat_FrontRight_Upper",
+        "Coat_FrontRight_Lower"
+      ],
+      "output": "jinwoo-rigged-v2.glb",
+      "size_bytes": 4313160,
+      "sha256": "993ac0107facd571f5f3f724ade4fa908a1e532b7efe67c30c53ef8ae3389e73",
+      "welded_vertices": 15543,
+      "triangles": 29674
+    },
+    {
+      "kind": "walking",
+      "source": "jinwoo-walking-v1.glb",
+      "source_sha256": "1a55c02e80270307a5971dc7b56011f69a668aae56ff03642a7bd75b1f6d02a9",
+      "source_vertices": 22793,
+      "source_triangles": 29691,
+      "face_vertices_smoothed": 870,
+      "maximum_face_displacement_m": 0.006419233408944842,
+      "coat_vertices_reweighted": 1117,
+      "coat_control_joints": [
+        "Coat_FrontLeft_Upper",
+        "Coat_FrontLeft_Lower",
+        "Coat_SideLeft_Upper",
+        "Coat_SideLeft_Lower",
+        "Coat_BackLeft_Upper",
+        "Coat_BackLeft_Lower",
+        "Coat_BackRight_Upper",
+        "Coat_BackRight_Lower",
+        "Coat_SideRight_Upper",
+        "Coat_SideRight_Lower",
+        "Coat_FrontRight_Upper",
+        "Coat_FrontRight_Lower"
+      ],
+      "output": "jinwoo-walking-v2.glb",
+      "size_bytes": 4353280,
+      "sha256": "ec403c1c717ee2a99cbf1d13f473972a0a515c2f22e993c648adbc2ac4b24e30",
+      "welded_vertices": 15543,
+      "triangles": 29674
+    },
+    {
+      "kind": "running",
+      "source": "jinwoo-running-v1.glb",
+      "source_sha256": "b68d7b97bcaa7cecd78a94f9a49cdf58d4e4a0603479fb44a74080c399325043",
+      "source_vertices": 22793,
+      "source_triangles": 29691,
+      "face_vertices_smoothed": 870,
+      "maximum_face_displacement_m": 0.006419233408944842,
+      "coat_vertices_reweighted": 1117,
+      "coat_control_joints": [
+        "Coat_FrontLeft_Upper",
+        "Coat_FrontLeft_Lower",
+        "Coat_SideLeft_Upper",
+        "Coat_SideLeft_Lower",
+        "Coat_BackLeft_Upper",
+        "Coat_BackLeft_Lower",
+        "Coat_BackRight_Upper",
+        "Coat_BackRight_Lower",
+        "Coat_SideRight_Upper",
+        "Coat_SideRight_Lower",
+        "Coat_FrontRight_Upper",
+        "Coat_FrontRight_Lower"
+      ],
+      "output": "jinwoo-running-v2.glb",
+      "size_bytes": 4348080,
+      "sha256": "3331f89746511684b2a398daa9e79017c4de65df665ce2bface5e569ae44e0ba",
+      "welded_vertices": 15543,
+      "triangles": 29674
+    }
+  ],
+  "limitations": [
+    "No finger controls or facial performance rig.",
+    "Coat controls use keyed secondary motion, not cloth collision simulation.",
+    "Generated topology and texture still require close-up acceptance."
+  ]
+}

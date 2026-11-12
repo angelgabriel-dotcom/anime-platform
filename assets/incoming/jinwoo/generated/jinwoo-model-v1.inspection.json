@@ -1,0 +1,63 @@
+{
+  "file": "/home/a/anime-platform/assets/incoming/jinwoo/generated/jinwoo-model-v1.glb",
+  "file_size_bytes": 4023612,
+  "sha256": "fb0931eeb1d7e81cf1cb8bb78455e9b54863e094a5176ac131aeb8e3d4f3e677",
+  "glb_version": 2,
+  "asset": {
+    "version": "2.0",
+    "generator": "https://github.com/mikedh/trimesh"
+  },
+  "extensions_required": [],
+  "mesh_count": 1,
+  "total_triangles": 29691,
+  "primitives": [
+    {
+      "mesh_index": 0,
+      "primitive_index": 0,
+      "name": "geometry_0",
+      "vertices": 22793,
+      "triangles": 29691,
+      "mode": 4,
+      "attributes": [
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0"
+      ],
+      "material": 0,
+      "local_bounds_min": [
+        -0.4313960075378418,
+        -0.4753420054912567,
+        -0.11352500319480896
+      ],
+      "local_bounds_max": [
+        0.4313960075378418,
+        0.4753420054912567,
+        0.1154789999127388
+      ],
+      "morph_target_count": 0
+    }
+  ],
+  "node_count": 1,
+  "skins": [],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "roughnessFactor": 1.0,
+        "metallicFactor": 0.0
+      },
+      "doubleSided": true
+    }
+  ],
+  "images": [
+    {
+      "bufferView": 2,
+      "mimeType": "image/png"
+    }
+  ],
+  "external_dependencies": [],
+  "animations": [],
+  "note": "Structural inspection only; likeness and deformation require visual review."
+}

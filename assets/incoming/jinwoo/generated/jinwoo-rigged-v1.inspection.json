@@ -1,0 +1,115 @@
+{
+  "file": "/home/a/anime-platform/assets/incoming/jinwoo/generated/jinwoo-rigged-v1.glb",
+  "file_size_bytes": 4746180,
+  "sha256": "a32985be7853b163d4399d15c0b43ccf58d9736fc088b9b71ccfc1c15411e42c",
+  "glb_version": 2,
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v4.5.51",
+    "version": "2.0"
+  },
+  "extensions_required": [],
+  "mesh_count": 1,
+  "total_triangles": 29691,
+  "primitives": [
+    {
+      "mesh_index": 0,
+      "primitive_index": 0,
+      "name": "geometry_0",
+      "vertices": 22793,
+      "triangles": 29691,
+      "mode": 4,
+      "attributes": [
+        "JOINTS_0",
+        "NORMAL",
+        "POSITION",
+        "TANGENT",
+        "TEXCOORD_0",
+        "WEIGHTS_0"
+      ],
+      "material": 0,
+      "local_bounds_min": [
+        -0.8167936205863953,
+        1.09047022078812e-07,
+        -0.21679507195949554
+      ],
+      "local_bounds_max": [
+        0.8167937397956848,
+        1.7999998331069946,
+        0.21679499745368958
+      ],
+      "morph_target_count": 0,
+      "weight_sum_range": [
+        0.9999998572748154,
+        1.0000001266598701
+      ],
+      "zero_weight_vertices": 0
+    }
+  ],
+  "node_count": 26,
+  "skins": [
+    {
+      "name": "Armature",
+      "joint_count": 24,
+      "joint_names": [
+        "Hips",
+        "Spine02",
+        "Spine01",
+        "Spine",
+        "neck",
+        "Head",
+        "head_end",
+        "headfront",
+        "LeftShoulder",
+        "LeftArm",
+        "LeftForeArm",
+        "LeftHand",
+        "RightShoulder",
+        "RightArm",
+        "RightForeArm",
+        "RightHand",
+        "LeftUpLeg",
+        "LeftLeg",
+        "LeftFoot",
+        "LeftToeBase",
+        "RightUpLeg",
+        "RightLeg",
+        "RightFoot",
+        "RightToeBase"
+      ],
+      "inverse_bind_matrices": true
+    }
+  ],
+  "materials": [
+    {
+      "name": "Material_0",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0
+      },
+      "doubleSided": true
+    }
+  ],
+  "images": [
+    {
+      "bufferView": 7,
+      "mimeType": "image/png",
+      "name": "Image_0"
+    }
+  ],
+  "external_dependencies": [],
+  "animations": [
+    {
+      "name": "Armature|clip0|baselayer",
+      "duration_seconds": 0.0,
+      "channels": 72,
+      "animated_paths": [
+        "rotation",
+        "scale",
+        "translation"
+      ]
+    }
+  ],
+  "note": "Structural inspection only; likeness and deformation require visual review."
+}
